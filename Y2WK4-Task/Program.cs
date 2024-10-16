@@ -11,7 +11,6 @@ foreach(string number in fileContents)
     numbers.Add(Convert.ToInt32(number));
 }
 
-
 while (true)
 {
     if(numbers.Count > 0)
@@ -31,7 +30,6 @@ while (true)
     }
 }
 
-//update file
 List<string> fileNumbers = new List<string>();
 foreach (int number in numbers)
 {

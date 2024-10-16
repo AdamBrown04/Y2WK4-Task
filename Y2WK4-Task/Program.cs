@@ -3,7 +3,6 @@ List<string> fileContents = new List<string>();
 if (File.Exists(path))
 {
     fileContents = File.ReadAllLines(path).ToList();
-
 }
 List<int> numbers = new List<int>();
 foreach(string number in fileContents)
@@ -17,7 +16,7 @@ while (true)
     {
         Console.WriteLine($"The average is: {numbers.Average()}");
     }
-   
+
     Console.Write("Enter a new number: ");
     string userInput = Console.ReadLine().ToLower();
     if (userInput == "q")
